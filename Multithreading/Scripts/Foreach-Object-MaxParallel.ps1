@@ -1,6 +1,6 @@
 <#
     .SYNOPSIS
-    Uses all available cores to parrallize a scriptblock passed in (Something in between {})
+    Uses all available cores to parrallize a scriptblock passed in (Something in between {}). Also prints out a progress bar based off of tasks complete.
 
     .PARAMETER Script
     The codeblock that will run
@@ -111,4 +111,4 @@ function Foreach-Object-MaxParallel {
     }
 }
 
-#Export-ModuleMember -Function Foreach-Object-MaxParallel
+Export-ModuleMember -Function Foreach-Object-MaxParallel
